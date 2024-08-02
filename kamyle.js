@@ -23,10 +23,20 @@ $('.sim').click(function(e){
     cont = cont + 1;
 })
 $('.nao').click(function(e){
-    if(cont2%2 == 0){
+    if (cont2 % 5 == 0) {
         $(".nao").css("transform", "translate(80px)");
-    }else{
-        $(".nao").css("transform", "translate(0px)");
+    } 
+    if (cont2 % 5 == 1) {
+        $(".nao").css("transform", "translate(20px, 150px)");
+    } 
+    if (cont2 % 5 == 2) {
+        $(".nao").css("transform", "translate(100px, 100px)");
+    } 
+    if (cont2 % 5 == 4) {
+        $(".nao").css("transform", "translate(0px, 0px)");
+    }
+    if (cont2 % 5 == 3) {
+        $(".nao").css("transform", "translate(-100px, 80px)");
     }
     cont2 = cont2 + 1;
 })
